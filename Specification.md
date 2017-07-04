@@ -9,6 +9,9 @@ Apart developing personal experience with the given technologies, it aims at pro
 ### Bio/CV
 Page that renders a short bio and a complete CV.
 
+#### Exemples
+[Cassidy Williams](http://cassidoo.co/)
+
 #### Possible Improvements
 Controls should be added to rearrange the CV from Chronological order to Technology view, for example.
 
@@ -42,3 +45,8 @@ Here is the [proposed list](https://stackoverflow.com/questions/2510560/pdf-libr
 ### Mobile Friendly
 This should be achieved by using the Bootstrap scaling mechanics.
 **N.B.:** no parallax effect, since it is not very well supported by mobile browsers (costly redrawing, AFAIK)
+
+## Build
+Gradle - dependencies - docker image
+## Deployment
+AWS
