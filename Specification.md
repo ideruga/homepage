@@ -11,6 +11,7 @@ Page that renders a short bio and a complete CV.
 
 #### Exemples
 [Cassidy Williams](http://cassidoo.co/)
+[Scott Nonnenberg](https://scottnonnenberg.com/)
 
 #### Possible Improvements
 Controls should be added to rearrange the CV from Chronological order to Technology view, for example.
