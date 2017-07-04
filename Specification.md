@@ -11,6 +11,10 @@ Every section of the website should be localized (Fr/En/Es/Ru).
 ### PDF Export
 CV/Bio section should be exportable to PDF format ("Download PDF" button)
 
+### Mobile Friendly
+This should be achieved by using the Bootstrap scaling mechanics.
+**N.B.:** no parallax effect, since it is not very well supported by mobile browsers (costly redrawing, AFAIK)
+
 ## Contents
 
 ### CV/Résumé/Bio
