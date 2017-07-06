@@ -33,18 +33,29 @@ All the sections should be rendered on mobile as well as on PC screen. The downl
 # Technical specification
 ## Technologies
 
-| Build | UI |  Server | DB | Deployment
-|---|---|---|---|---
-| Gradle | Angular 4 | Spring | Postgres | AWS
-|| Bootstrap | JPA | Liquibase | Docker
 
-### Internationalisation
+| Language | Build | UI |  Server | DB | Deployment
+|---|---|---|---|---|---
+|Java 8| Gradle | Angular 4 | Spring | Postgres | AWS
+||| Bootstrap | JPA | Liquibase | Docker
+
+## Java 9 Migration
+The major reason for not using java 9 right away is the lack of Tomcat/Docker support for it. Eclipse support is also tricky to install for now. A milestone should be scheduled to migrate the system to Java 9 after all subsystems support the new version:
+
+- [x] SDK 
+- [ ] Tomcat
+- [ ] Spring
+- [ ] Gradle
+- [ ] JDBC Driver
+- [ ] JPA (?)
+
+## Internationalisation
 There is some challenge here: the standard label localization should be joined with the text localization (the text will be stored in the database, hence it should be retrieved depending on the language defaulting to english).
 
-### PDF Export
+## PDF Export
 Here is the [proposed list](https://stackoverflow.com/questions/2510560/pdf-library-for-java) of the pdf generating libraries. The default choice is Apache PdfBox. The last release is dated on 2017-05-15. This seems to be an overkill, but it would allow us to avoid problems with pdf format nuances that can be not supported in minor libraries.
 
-### Mobile Friendly
+## Mobile Friendly
 This should be achieved by using the Bootstrap scaling mechanics.
 **N.B.:** no parallax effect, since it is not very well supported by mobile browsers (costly redrawing, AFAIK)
 
