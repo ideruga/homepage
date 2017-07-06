@@ -2,7 +2,7 @@
 ## Intro
 The goal of this project is to create a miniature personal web page frame built on the modern Java stack. It should be easily customisable and deployable. 
 
-Apart developing personal experience with the given technologies, it aims at providing examples of a real-world usage.
+Apart from developing personal experience with the given technologies, it aims at providing examples of a real-world usage of the frameworks it is based on.
 
 ## Contents
 
