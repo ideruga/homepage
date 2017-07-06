@@ -39,6 +39,8 @@ All the sections should be rendered on mobile as well as on PC screen. The downl
 |Java 8| Gradle | Angular 4 | Spring | Postgres | AWS
 ||| Bootstrap | JPA | Liquibase | Docker
 
+Important note: no Spring Bootstrap is allowed. The goal is to fine-tune the system and use only what is needed and when it is needed. The deployment should be made using Docker or using Eclipse (dev).
+
 ## Java 9 Migration
 The major reason for not using java 9 right away is the lack of Tomcat/Docker support for it. Eclipse support is also tricky to install for now. A milestone should be scheduled to migrate the system to Java 9 after all subsystems support the new version:
 
