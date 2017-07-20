@@ -61,7 +61,39 @@ Here is the [proposed list](https://stackoverflow.com/questions/2510560/pdf-libr
 This should be achieved by using the Bootstrap scaling mechanics.
 **N.B.:** no parallax effect, since it is not very well supported by mobile browsers (costly redrawing, AFAIK)
 
-## Build
-Gradle - dependencies - docker image
-## Deployment
-AWS
+## Build and Deployment
+### Gradle
+
+In order to build the project, you first need to create a gradle wrapper by running this command:
+
+`gradle wrapper --gradle-version=4.0`
+
+Now, to actually build the project, run 
+
+`gradlew build` 
+
+### Eclipse
+- Clone the project via git. 
+- Make sure that you have the latest Buildship version installed
+- Import the project
+- Open Facets section in the project properties; add "Dynamic Web Project" and "Java"
+- Open Deployment Assembly in the project properties; Remove WebContent folder and add src/main/webapp
+- Deploy the project in Tomcat v8.5 in the Servers view.
+- Go to [http://localhost:8080/homepage](local address) to make sure it is deployed.
+
+### Docker
+
+In order to create a docker container with the war deployed in the tomcat, you first need to build the project (see the 'Gradle' section above).
+
+To build a docker container, run the following command from the root folder of the project:
+
+`docker build -t homepage:0.1 -f src/main/docker/Dockerfile .`
+
+After the image is built, you can run the container as follows:
+
+`docker run -it --rm -p 80:8080 homepage:0.1`
+
+Please, note that the actual IP of the docker machine depends on the docker implementation. For instance, when opening the Docker Quickstart Terminal for Windows, you get a message: 
+`docker is configured to use the default machine with IP xxx.xxx.xx.xxx`
+Use this ip and open the page at `http://xxx.xxx.xx.xxx/` and you should see the initial screen of the homepage project.
+### AWS
