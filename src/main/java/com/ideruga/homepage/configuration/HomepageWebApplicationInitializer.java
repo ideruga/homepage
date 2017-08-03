@@ -17,6 +17,5 @@ public class HomepageWebApplicationInitializer implements WebApplicationInitiali
 		ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", new DispatcherServlet(webAppContext));
 
 		dispatcher.setLoadOnStartup(1);
-		dispatcher.addMapping("/");
 	}
 }
