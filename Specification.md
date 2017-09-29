@@ -46,7 +46,7 @@ The major reason for not using java 9 right away is the lack of Tomcat/Docker su
 
 - [x] SDK 
 - [ ] Tomcat
-- [ ] Spring
+- [x] Spring (5.0 Generally Available)
 - [ ] Gradle
 - [ ] JDBC Driver
 - [ ] JPA (?)
